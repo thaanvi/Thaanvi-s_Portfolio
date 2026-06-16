@@ -38,6 +38,18 @@ nav a{color:var(--text);text-decoration:none;font-weight:600}
 .cta-row{margin-top:40px;display:flex;gap:28px}
 .btn.large{padding:14px 34px;border-radius:6px;background:var(--accent-dark);color:#fff;text-decoration:none;font-weight:700}
 .btn.large.ghost{background:transparent;color:var(--accent-dark);border:2px solid rgba(63,42,30,0.12)}
+.home-section{padding-top:42px;padding-bottom:18px}
+.section-heading-row{display:flex;align-items:end;justify-content:space-between;gap:18px;margin-bottom:18px}
+.section-heading-row h2{margin:0;color:var(--accent-dark);font-size:2rem}
+.home-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.home-grid.compact{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.home-summary-card{background:#fff;border:1px solid rgba(0,0,0,0.08);border-radius:12px;padding:20px;box-shadow:0 8px 20px rgba(0,0,0,0.04)}
+.home-summary-card h3{margin:0 0 10px;color:var(--accent-dark)}
+.home-summary-card p{margin:0 0 10px;color:#4f493f;line-height:1.65}
+.home-summary-card p:last-child{margin-bottom:0}
+.home-projects{margin-top:0}
+.home-skill-list{display:flex;flex-wrap:wrap;gap:12px;list-style:none;margin:0;padding:0}
+.home-skill-list li{background:#fff;border:1px solid rgba(0,0,0,0.08);border-radius:8px;padding:10px 14px;color:var(--accent-dark);font-weight:700;box-shadow:0 6px 16px rgba(0,0,0,0.03)}
 .profile-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
 .icon-link{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;background:var(--accent);color:#fff;border-radius:12px;text-decoration:none;transition:background 0.2s ease}
 .icon-link:hover{background:#5e3a24}
@@ -158,6 +170,8 @@ input,textarea{width:100%;padding:10px;border-radius:6px;border:1px solid rgba(0
   .container{padding:12px}
   .name{font-size:1.6rem}
   .right-inner h2{font-size:2rem}
+  .section-heading-row{align-items:flex-start;flex-direction:column}
+  .section-heading-row h2{font-size:1.6rem}
   .cta-row{flex-direction:column}
   .social{justify-content:flex-start}
 }
