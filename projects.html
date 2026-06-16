@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects — Thaanvi Sudarsan Meda</title>
+  <meta name="description" content="Featured projects: 3D facial reconstruction, smart voting system, and more.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html"><span class="brand-icon">T</span> Thaanvi Sudarsan Meda</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="experience.html">Experience</a>
+        <a href="education.html">Education</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skillset</a>
+        <a href="leadership.html">Leadership</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main">
+    <div class="cards">
+      <a class="card" href="visual-face-reconstruction.html">
+        <h3>Visual Speech-Aware 3D Facial Reconstruction</h3>
+        <p>Built speech-aware 3D facial reconstruction using SPECTRE/DECA backbone with MobileNetV2 and temporal convolution, trained on LRS3 dataset (118K+ synchronized audio-video clips). Deployed on AWS EC2 with Streamlit frontend.</p>
+        <p><strong>Tech:</strong> Python, PyTorch, OpenCV, AWS, Streamlit</p>
+        <div class="card-screenshots">
+          <img src="assets/Spectre1.png" alt="Speech-aware 3D facial reconstruction dashboard screenshot 1">
+          <img src="assets/Spectre2.png" alt="Speech-aware 3D facial reconstruction dashboard screenshot 2">
+        </div>
+      </a>
+      <a class="card" href="smart-voting-system.html">
+        <h3>Smart Voting System (Published Research)</h3>
+        <p>Developed a biometric fingerprint recognition system using Gabor filtering and Hamming distance-based minutiae matching. Published at ICICCT 2022, Springer. Demonstrates advanced image processing and security applications.</p>
+        <p><strong>Tech:</strong> Python, OpenCV, Pandas, GSM Module</p>
+        <div class="card-screenshots">
+          <img src="assets/GSM1.png" alt="Smart voting system dashboard screenshot 1">
+          <img src="assets/GSM2.png" alt="Smart voting system dashboard screenshot 2">
+        </div>
+      </a>
+      <a class="card" href="multi-station-environmental-behaviour-analysis.html">
+        <h3>Multistation Environmental Behaviour Analysis</h3>
+        <p>This project presents an interactive Tableau dashboard built to analyze and visualize key insights from the dataset.</p>
+        <p><strong>Tech:</strong> Tableau, Tableau Prep Builder, Excel / CSV, Data Visualization, Dashboard Design</p>
+        <div class="card-screenshots">
+          <img src="assets/VA_image.png" alt="Environmental behavior dashboard with humidity trends, battery voltage, and wind speed analysis">
+          <img src="assets/VA_image2.png" alt="Correlation analysis dashboard showing temperature vs humidity relationships">
+        </div>
+      </a>
+      <a class="card" href="restaurant-review-sentiment-analysis.html">
+        <h3>Restaurant Review Sentiment Analysis System</h3>
+        <p>The user manual explains how to install, launch, and use a restaurant review sentiment system. It analyzes reviews, classifies them as positive, neutral, or negative, and presents the results on a user-friendly dashboard for managers, owners, and diners.</p>
+        <p><strong>Tech:</strong> Python, NLP, Sentiment Analysis, Dashboard Design</p>
+        <div class="card-screenshots">
+          <img src="assets/sentimental_analysis.png" alt="Restaurant review sentiment dashboard - overview">
+          <img src="assets/sentimental_analysis2.png" alt="Restaurant review sentiment dashboard - detailed view">
+        </div>
+      </a>
+      <a class="card" href="graph-algorithms.html">
+        <h3>Graph algorithms and related data structures</h3>
+        <p>In this project three graph algorithms are implemented which include: Single-Source Shortest Path, Minimum Spanning Tree using Kruskal’s algorithm and Depth-First Search with topological sorting and cycle detection.</p>
+        <p><strong>Tech:</strong> Python, Jupyter Notebook, Graph Algorithms, Dijkstra’s Algorithm, Kruskal’s Algorithm, DFS, Priority Queue, Union-Find</p>
+        <div class="card-screenshots">
+          <img src="assets/DSA1.png" alt="Graph algorithm visualization screenshot 1">
+          <img src="assets/DSA2.png" alt="Graph algorithm visualization screenshot 2">
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; <span id="year"></span> Thaanvi Sudarsan Meda — Built with simple HTML & CSS</small>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

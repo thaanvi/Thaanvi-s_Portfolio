@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Graph algorithms and related data structures — Project Documentation</title>
+  <meta name="description" content="Documentation for the Graph Algorithms and Related Data Structures project, including algorithm design, results, and visualizations." />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html"><span class="brand-icon">T</span> Thaanvi Sudarsan Meda</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="experience.html">Experience</a>
+        <a href="education.html">Education</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skillset</a>
+        <a href="leadership.html">Leadership</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main">
+    <article class="card">
+      <div class="project-title-row">
+        <h1>Graph algorithms and related data structures</h1>
+        <a class="project-repo-link" href="https://github.com/thaanvi/Graph-Algorithms-and-Related-Data-Structures/tree/main" target="_blank" rel="noreferrer" aria-label="View Graph Algorithms repository on GitHub">
+          <img src="assets/github-logo.svg" alt="">
+        </a>
+      </div>
+      <p>In this project three graph algorithms are implemented which include: Single-Source Shortest Path, Minimum Spanning Tree using Kruskal’s algorithm and Depth-First Search with topological sorting and cycle detection. The implemented algorithms are applied to both directed and undirected graphs, where we find the shortest paths, MST and detect cycles respectively. These algorithms are implemented on five graphs further providing the results and visualizations.</p>
+      <section>
+        <h2>Project Overview</h2>
+        <p>The project demonstrates a practical graph algorithm workflow: building graph structures, choosing the right algorithm for the problem, and verifying results with example graph data. It covers both weighted and unweighted graphs, directed and undirected graphs, and the common operations needed for graph traversal and analysis.</p>
+      </section>
+      <section>
+        <h2>Implemented Algorithms</h2>
+        <ul>
+          <li><strong>Single-Source Shortest Path</strong> — Dijkstra’s Algorithm with a priority queue to compute shortest paths from a source node.</li>
+          <li><strong>Minimum Spanning Tree</strong> — Kruskal’s Algorithm with Union-Find to build the MST for undirected graphs.</li>
+          <li><strong>Depth-First Search</strong> — DFS traversal used for topological sorting and cycle detection in directed graphs.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Results and Visualizations</h2>
+        <p>The implementation includes results for five sample graphs, showing shortest path distances, computed MST edges, and cycle detection outcomes. Visualizations are created using Python plotting to make graph structure, traversal, and algorithm behavior easier to interpret.</p>
+      </section>
+      <section>
+        <h2>Tech Stack</h2>
+        <p>Python, Jupyter Notebook, Graph Algorithms, Dijkstra’s Algorithm, Kruskal’s Algorithm, DFS, Priority Queue, Union-Find</p>
+      </section>
+      <section>
+        <h2>Example Screenshots</h2>
+        <div class="screenshot-grid">
+          <div class="screenshot-card">
+            <img class="screenshot" src="assets/DSA3.png" alt="DFS and topological sort screenshot">
+            <p>Depth-first search traversal and topological sorting visualization.</p>
+          </div>
+          <div class="screenshot-card">
+            <img class="screenshot" src="assets/DSA4.png" alt="Cycle detection graph visualization screenshot">
+            <p>Directed graph cycle detection and analysis results.</p>
+          </div>
+        </div>
+      </section>
+      <p class="back-to-projects"><a class="btn" href="projects.html">Back to Projects</a></p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; <span id="year"></span> Thaanvi Sudarsan Meda — Built with simple HTML & CSS</small>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#e8dfd4"/>
+  <rect x="32" y="32" width="736" height="124" fill="#c9b59b" rx="14"/>
+  <rect x="32" y="180" width="300" height="180" fill="#fff" rx="14"/>
+  <rect x="352" y="180" width="436" height="180" fill="#fff" rx="14"/>
+  <rect x="72" y="220" width="220" height="18" fill="#b08a62" rx="6"/>
+  <rect x="72" y="260" width="180" height="18" fill="#b08a62" rx="6"/>
+  <rect x="392" y="220" width="320" height="18" fill="#b08a62" rx="6"/>
+  <rect x="392" y="260" width="360" height="18" fill="#d8c6b2" rx="6"/>
+  <text x="30" y="470" fill="#7a5b41" font-size="24" font-family="system-ui, sans-serif">Screenshot: Humidity and Voltage Comparison</text>
+</svg>

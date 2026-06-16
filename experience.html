@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Experience — Thaanvi Sudarsan Meda</title>
+  <meta name="description" content="Professional experience: iOS development at Target, AI research at UNC Charlotte, and more.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html"><span class="brand-icon">T</span> Thaanvi Sudarsan Meda</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="experience.html">Experience</a>
+        <a href="education.html">Education</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skillset</a>
+        <a href="leadership.html">Leadership</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main">
+    <h1>Experience</h1>
+    <div class="experience-container">
+      <div class="experience-cards" role="tablist" aria-label="Experience selector">
+        <button class="experience-card active" data-key="target" type="button" role="tab" aria-selected="true">
+          <img src="assets/target.png" alt="Target Corporation logo">
+        </button>
+        <button class="experience-card" data-key="uncc" type="button" role="tab" aria-selected="false">
+          <img src="assets/UNCC.jpg" alt="UNC Charlotte logo">
+        </button>
+        <button class="experience-card" data-key="pwc" type="button" role="tab" aria-selected="false">
+          <img src="assets/PWC.png" alt="PwC logo">
+        </button>
+      </div>
+
+      <div class="experience-details">
+        <div class="experience-panel active" data-key="target">
+          <section>
+            <h2>Target Corporation</h2>
+            <p><strong>iOS App Developer</strong> — Aug 2022 – Jul 2024</p>
+            <ul>
+              <li>As one of two engineers on the Registry sub-team, solely owned development and maintenance of 18 - 20 registry pages on Target’s 
+                iOS application serving 1M+ concurrent users.</li>
+              <li>Independently delivered the Registry Checklist feature end-to-end, driving 32K+ daily visits and boosting customer engagement. Led UIKit → SwiftUI migration across 9–12 
+                screens with full unit test coverage, reducing crash rates and improving page load time by 18% in a high-traffic production environment.</li>
+                <li>Collaborated with product managers, designers and cross-functional engineering teams throughout Agile sprint cycles to deliver customer-facing features and contributed to code testing, reviews, beta 
+                    releases and production support to ensure application quality and reliability.</li>
+                    <li>Delivered features across every release cycle while implementing asynchronous
+                         RESTful APIs, JSON parsing and MVVM architecture patterns.</li>
+            </ul>
+          </section>
+          <div class="experience-collage">
+            <img src="assets/target_picture1.JPG" alt="Target experience image 1" class="collage-img img1">
+            <img src="assets/target_picture3.JPG" alt="Target experience image 2" class="collage-img img2">
+            <img src="assets/target_picture2.JPG" alt="Target experience image 3" class="collage-img img3">
+            <img src="assets/target_picture4.JPG" alt="Target experience image 4" class="collage-img img4">
+          </div>
+        </div>
+        <div class="experience-panel" data-key="uncc">
+          <section>
+            <h2>UNC Charlotte</h2>
+            <p><strong>Research Engineer, MetaBo Food Vision Pro</strong> — Nov 2025 – May 2026</p>
+            <ul>
+              <li>Developing a spatial computing application for Apple Vision Pro that delivers personalized nutritional
+recommendations based on user health profiles and disease-specific dietary needs.
+</li>
+              <li>Leveraging a dataset of 35K+ food products stored in PostgreSQL and integrating RESTful APIs to support 
+                personalized nutritional recommendations and real-time food analysis.</li>
+            </ul>
+            <p><a class="btn" href="https://drive.google.com/drive/folders/1_fEfsxDglyId_bzeo3bZcqAuI9nUN5AV" target="_blank" rel="noreferrer">View Demo Video</a></p>
+          </section>
+          <section>
+            <h2>UNC Charlotte</h2>
+            <p><strong>Instructional Assistant</strong> — Aug 2025 – May 2026</p>
+            <ul>
+              <li>Supported 195 students across three course sections through recitations, 
+                office hours, grading and Tableau-based data visualization guidance.</li>
+              <li>Assisted with exam preparation and provided individualized academic support to 
+                improve student understanding and assignment quality.</li>
+            </ul>
+          </section>
+          <div class="experience-collage uncc-collage">
+            <img src="assets/UNCC_p1.jpeg" alt="UNCC collage image 1" class="collage-img">
+            <img src="assets/UNCC_p2.jpeg" alt="UNCC collage image 2" class="collage-img">
+            <img src="assets/UNCC_p4.png" alt="UNCC collage image 3" class="collage-img">
+            <img src="assets/UNCC_p3.jpg" alt="UNCC collage image 4" class="collage-img">
+            <img src="assets/UNCC_p5.jpg" alt="UNCC collage image 5" class="collage-img">
+            <img src="assets/UNCC_p6.jpg" alt="UNCC collage image 6" class="collage-img">
+          </div>
+        </div>
+        <div class="experience-panel" data-key="pwc">
+          <section>
+            <h2>PwC</h2>
+            <p><strong>Risk Analyst Intern</strong> — Jan 2022 – Jul 2022</p>
+            <ul>
+              <li>Applied machine learning techniques to analyze 100K+ client records, identifying fraud patterns 
+                and supporting risk mitigation initiatives.</li>
+              <li>Automated analytical workflows and data validation processes 
+                to improve reporting efficiency and decision-making.</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; <span id="year"></span> Thaanvi Sudarsan Meda — Built with simple HTML & CSS</small>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    const expCards = document.querySelectorAll('.experience-card');
+    const expPanels = document.querySelectorAll('.experience-panel');
+
+    expCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const key = card.dataset.key;
+        expCards.forEach(btn => {
+          btn.classList.toggle('active', btn === card);
+          btn.setAttribute('aria-selected', String(btn === card));
+        });
+        expPanels.forEach(panel => {
+          panel.classList.toggle('active', panel.dataset.key === key);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

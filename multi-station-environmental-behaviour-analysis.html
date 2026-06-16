@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Multistation Environmental Behaviour Analysis — Project Documentation</title>
+  <meta name="description" content="Documentation for the Multistation Environmental Behaviour Analysis Tableau dashboard project." />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html"><span class="brand-icon">T</span> Thaanvi Sudarsan Meda</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="experience.html">Experience</a>
+        <a href="education.html">Education</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skillset</a>
+        <a href="leadership.html">Leadership</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main">
+    <article class="card">
+      <div class="project-title-row">
+        <h1>Multistation Environmental Behaviour Analysis</h1>
+        <a class="project-repo-link" href="https://github.com/thaanvi/Tableau_VA_Project" target="_blank" rel="noreferrer" aria-label="View Tableau VA Project repository on GitHub">
+          <img src="assets/github-logo.svg" alt="">
+        </a>
+      </div>
+      <p><strong>Author:</strong> Thaanvi Sudarsan Meda — 801418292</p>
+      <section>
+        <h2>Introduction</h2>
+        <p>This project presents an interactive Tableau dashboard built to analyze and visualize key insights from environmental monitoring data across four stations: DE, DU, NRDE, and SR.</p>
+      </section>
+
+      <section>
+        <h2>Project Goals</h2>
+        <p>The dashboard analyzes wind speed, relative humidity, and battery voltage across multiple stations. Each view is designed to compare atmospheric and equipment performance differences between locations while enabling dynamic station selection.</p>
+      </section>
+
+      <section>
+        <h2>Dashboard Tasks and Users</h2>
+        <p>The dashboard supports the following tasks, each important for researchers, faculty, students, and maintenance teams working with station data.</p>
+        <ul>
+          <li><strong>Relative Humidity Trends by Month and Station</strong> — Visualize monthly humidity patterns for two user-selected stations using combined bars and lines. This view highlights moist, dry, and transition periods across stations to reveal microclimate differences.</li>
+          <li><strong>Relative Analysis of Battery Voltage</strong> — Compare average battery voltage across quarterly intervals for two stations. This identifies low-voltage periods that could threaten sensor reliability and data continuity.</li>
+          <li><strong>Relative Wind Speed Analysis</strong> — Analyze monthly average wind speed changes for two stations. The dual-line chart reveals seasonal peaks and valleys, helping users understand airflow and local climate behavior.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Task Importance</h2>
+        <p>Each task is designed for the project’s target users:</p>
+        <ul>
+          <li><strong>Relative humidity</strong> is essential for comfort, evaporation, wetness, and fog formation analysis.</li>
+          <li><strong>Battery voltage</strong> indicates sensor health and data reliability, especially in field conditions.</li>
+          <li><strong>Wind speed</strong> helps interpret airflow, moisture dispersion, and microclimate differences between site locations.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Target Users</h2>
+        <ul>
+          <li>Redlair climate and hydrology researchers</li>
+          <li>Environmental science faculty at UNC Charlotte</li>
+          <li>Students analyzing multi-station environmental behavior</li>
+          <li>Sensor maintenance teams monitoring battery and climate performance</li>
+          <li>Microclimate comparison groups studying DE, DU, NRDE, and SR stations</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Meaning of Displayed Values</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Variable</th>
+              <th>Meaning</th>
+              <th>Why It Matters</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Avg. Humidity</strong></td>
+              <td>Monthly mean relative humidity for the selected station.</td>
+              <td>Shows moisture levels needed for fog, dew, evapotranspiration, and comfort analysis.</td>
+            </tr>
+            <tr>
+              <td><strong>Avg. BattV (V)</strong></td>
+              <td>Average battery voltage powering each environmental station.</td>
+              <td>Indicates equipment reliability and ensures sensors have enough power for accurate readings.</td>
+            </tr>
+            <tr>
+              <td><strong>Avg. Wind Speed (m/s)</strong></td>
+              <td>Monthly mean wind speed for each selected station.</td>
+              <td>Helps interpret airflow, heat loss, moisture movement, and microclimate differences.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Interactive Station Selection</h2>
+        <p>Station selectors allow users to compare any two stations instantly. The dashboard updates charts dynamically, supporting direct comparison without rebuilding visualizations.</p>
+      </section>
+
+      <section>
+        <h2>Example Dashboard Screenshots</h2>
+        <div class="screenshot-grid">
+          <div class="screenshot-card">
+            <img class="screenshot" src="assets/VA_image3.png" alt="Dashboard screenshot showing station comparison charts with humidity and battery voltage trends">
+            <p>Station comparison charts showing humidity and battery voltage trends.</p>
+          </div>
+          <div class="screenshot-card">
+            <img class="screenshot" src="assets/VA_image4.png" alt="Dashboard screenshot showing wind and humidity analysis charts with interactive station selectors">
+            <p>Wind and humidity analysis views with interactive station selectors.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Missing Data Handling</h2>
+        <p>Missing values are treated carefully to preserve data integrity:</p>
+        <ul>
+          <li>Short gaps (minutes to a few hours) are ignored during aggregation.</li>
+          <li>Longer gaps (days or weeks) are excluded from monthly averages to avoid bias.</li>
+          <li>No imputation is applied; only valid sensor readings are used.</li>
+        </ul>
+      </section>
+
+      <p class="back-to-projects"><a class="btn" href="projects.html">Back to Projects</a></p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; <span id="year"></span> Thaanvi Sudarsan Meda — Built with simple HTML & CSS</small>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

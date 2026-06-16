@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Visual Speech-Aware 3D Facial Reconstruction — Project Documentation</title>
+  <meta name="description" content="Documentation for the Visual Speech-Aware 3D Facial Reconstruction project." />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html"><span class="brand-icon">T</span> Thaanvi Sudarsan Meda</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="experience.html">Experience</a>
+        <a href="education.html">Education</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skillset</a>
+        <a href="leadership.html">Leadership</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main">
+    <article class="card">
+      <h1>Visual Speech-Aware 3D Facial Reconstruction</h1>
+      <p>This project builds speech-aware 3D facial reconstruction using a SPECTRE/DECA backbone, MobileNetV2 feature extraction, and temporal convolution for audio-video synchronization. It is trained on the LRS3 dataset and deployed on AWS EC2 with a Streamlit frontend.</p>
+
+      <section>
+        <h2>Project Summary</h2>
+        <p>The system reconstructs 3D facial geometry from video while incorporating speech cues to improve realism and expression accuracy. It uses deep learning to fuse audio and visual features, allowing improved facial detail and lip-sync performance in generated 3D outputs.</p>
+      </section>
+
+      <section>
+        <h2>Key Features</h2>
+        <ul>
+          <li>Speech-aware 3D facial reconstruction using synced audio-video input.</li>
+          <li>SPECTRE/DECA backbone with MobileNetV2 for efficient feature extraction.</li>
+          <li>Temporal convolution to capture motion and expression across frames.</li>
+          <li>Deployment on AWS EC2 with a Streamlit user interface.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Tech Stack</h2>
+        <p>Python, PyTorch, OpenCV, AWS, Streamlit</p>
+      </section>
+
+      <section>
+        <h2>Example Screenshots</h2>
+        <div class="screenshot-grid">
+          <div class="screenshot-card">
+            <img class="screenshot" src="assets/Spectre1.png" alt="Speech-aware 3D facial reconstruction screenshot 1">
+            <p>Example SPECTRE reconstruction output with speech-aware detail.</p>
+          </div>
+          <div class="screenshot-card">
+            <img class="screenshot" src="assets/Spectre2.png" alt="Speech-aware 3D facial reconstruction screenshot 2">
+            <p>Alternate view showing facial geometry and synchronized audio cues.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Outcomes</h2>
+        <p>The project demonstrates accurate 3D facial reconstruction under varying speech conditions, with synchronized audio-visual output and an easily accessible frontend for demonstration and testing.</p>
+      </section>
+
+      <p class="back-to-projects"><a class="btn" href="projects.html">Back to Projects</a></p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; <span id="year"></span> Thaanvi Sudarsan Meda — Built with simple HTML & CSS</small>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+  <title id="title">Apple Vision Pro logo</title>
+  <defs>
+    <linearGradient id="visor" x1="44" y1="168" x2="212" y2="96" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0a0d12"/>
+      <stop offset="0.5" stop-color="#111827"/>
+      <stop offset="1" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="34" y1="120" x2="222" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6b7280"/>
+      <stop offset="0.5" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#64748b"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="66" y1="88" x2="190" y2="88" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#eef2ff" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#94a3b8" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="48" fill="#000000"/>
+  <text x="128" y="58" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" text-anchor="middle">Vision Pro</text>
+  <path d="M34 128c0-38 27-60 74-60h40c47 0 74 22 74 60 0 41-23 70-58 70-21 0-30-13-36-26-6 13-15 26-36 26-35 0-58-29-58-70z" fill="url(#rim)"/>
+  <path d="M44 129c0-31 23-50 65-50h38c42 0 65 19 65 50 0 33-18 58-47 58-18 0-26-11-31-23-2-5-4-8-6-8s-4 3-6 8c-5 12-13 23-31 23-29 0-47-25-47-58z" fill="url(#visor)"/>
+  <path d="M67 101c14-9 35-13 62-13 25 0 45 4 60 13-11-3-31-5-61-5-29 0-49 2-61 5z" fill="url(#shine)"/>
+  <path d="M75 167c12 5 28 2 36-10M181 167c-12 5-28 2-36-10" fill="none" stroke="#1f2937" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="83" cy="151" r="8" fill="#020617" stroke="#1f2937" stroke-width="3"/>
+  <circle cx="173" cy="151" r="8" fill="#020617" stroke="#1f2937" stroke-width="3"/>
+</svg>

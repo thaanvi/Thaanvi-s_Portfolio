@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+  <title id="title">Tableau logo</title>
+  <rect width="256" height="256" fill="#ffffff"/>
+  <g stroke-linecap="square" stroke-width="14">
+    <g stroke="#5b8793">
+      <path d="M151 14v34M134 31h34"/>
+      <path d="M47 101v34M30 118h34"/>
+      <path d="M203 54v45M181 76h45"/>
+    </g>
+    <g stroke="#f28c22">
+      <path d="M92 56v55M65 84h55"/>
+    </g>
+    <g stroke="#e66a20">
+      <path d="M151 107v55M123 135h56"/>
+    </g>
+    <g stroke="#60658b">
+      <path d="M205 113v42M184 134h42"/>
+      <path d="M150 192v42M129 213h42"/>
+    </g>
+    <g stroke="#163f78">
+      <path d="M206 163v55M178 191h56"/>
+    </g>
+    <g stroke="#c91f3a">
+      <path d="M94 164v55M66 192h56"/>
+    </g>
+  </g>
+</svg>

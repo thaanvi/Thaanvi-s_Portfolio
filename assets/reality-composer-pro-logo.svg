@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+  <title id="title">Reality Composer Pro logo</title>
+  <defs>
+    <linearGradient id="bg" x1="28" y1="228" x2="228" y2="28" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4f46e5"/>
+      <stop offset="0.5" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="cube" x1="76" y1="180" x2="180" y2="76" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+  <rect x="20" y="20" width="216" height="216" rx="48" fill="url(#bg)"/>
+  <path d="M128 55l65 37v73l-65 37-65-37V92l65-37z" fill="none" stroke="#fff" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M128 55v73l65 37M128 128l-65 37M128 128l65-36M128 128L63 92" fill="none" stroke="url(#cube)" stroke-width="10" stroke-linejoin="round"/>
+  <circle cx="128" cy="128" r="18" fill="#ffffff"/>
+  <text x="128" y="221" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" text-anchor="middle">RCP</text>
+</svg>
