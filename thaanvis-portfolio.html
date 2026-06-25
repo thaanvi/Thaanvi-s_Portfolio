@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Thaanvi's Portfolio — Project Documentation</title>
+  <meta name="description" content="Documentation for Thaanvi's Portfolio, a responsive personal portfolio website showcasing experience, education, projects, skillset, leadership, and contact information." />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html"><span class="brand-icon">T</span> Thaanvi Sudarsan Meda</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="experience.html">Experience</a>
+        <a href="education.html">Education</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skillset</a>
+        <a href="leadership.html">Leadership</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main">
+    <article class="card">
+      <div class="project-title-row">
+        <h1>Thaanvi's Portfolio</h1>
+        <a class="project-repo-link" href="https://github.com/thaanvi/Thaanvi-s_Portfolio" target="_blank" rel="noreferrer" aria-label="View Thaanvi's Portfolio repository on GitHub">
+          <img src="assets/github-logo.svg" alt="">
+        </a>
+      </div>
+      <p>A responsive personal portfolio website built to showcase professional experience, education, projects, technical skillset, leadership work, resume, and contact details through a clean static site structure.</p>
+      <section>
+        <h2>Project Overview</h2>
+        <p>The portfolio brings the major parts of my professional story into a single navigable experience. It includes a home page with detailed preview sections, dedicated pages for each category, horizontal project scrolling, education flip cards, and an interactive experience selector.</p>
+      </section>
+      <section>
+        <h2>Key Features</h2>
+        <ul>
+          <li>Multi-page portfolio structure with consistent navigation and styling.</li>
+          <li>Project carousel with screenshots and dedicated documentation pages.</li>
+          <li>Interactive experience panels and education flip-card gallery.</li>
+          <li>Responsive layout designed for desktop and mobile viewing.</li>
+          <li>Contact page with email-based message flow.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Tech Stack</h2>
+        <p>HTML, CSS, JavaScript, Codex, Copilot, VS Code</p>
+      </section>
+      <section>
+        <h2>Project Screenshots</h2>
+        <div class="screenshot-grid">
+          <div class="screenshot-card">
+            <img class="screenshot" src="assets/Portfolio3.png" alt="Thaanvi's Portfolio screenshot 3">
+            <p>Project and content presentation view.</p>
+          </div>
+          <div class="screenshot-card">
+            <img class="screenshot" src="assets/Portfolio4.png" alt="Thaanvi's Portfolio screenshot 4">
+            <p>Additional portfolio page and responsive content view.</p>
+          </div>
+        </div>
+      </section>
+      <p class="back-to-projects"><a class="btn" href="projects.html">Back to Projects</a></p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; <span id="year"></span> Thaanvi Sudarsan Meda — Built with simple HTML & CSS</small>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
