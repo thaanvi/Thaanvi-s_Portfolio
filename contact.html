@@ -26,7 +26,7 @@
     <h1>Contact</h1>
     <p>I'd love to hear about opportunities or collaborations. Fill out the form below and I'll get back to you shortly.</p>
 
-    <form class="contact-form" action="https://formspree.io/f/xyzpqrst" method="POST">
+    <form class="contact-form" id="contact-form">
       <label>Name
         <input type="text" name="name" required>
       </label>
@@ -39,7 +39,7 @@
       <button class="btn" type="submit">Send</button>
     </form>
 
-    <p><small>Replace the form <code>action</code> URL with your Formspree endpoint. <a href="https://formspree.io" target="_blank">Create one free</a>.</small></p>
+    <p><small>Submitting this form opens your email app with the message addressed to <a href="mailto:medathaanvi@gmail.com?subject=%F0%9F%93%A9%20message">medathaanvi@gmail.com</a>.</small></p>
   </main>
 
   <footer class="site-footer">
@@ -47,6 +47,21 @@
       <small>&copy; <span id="year"></span> Thaanvi Sudarsan Meda — Built with simple HTML & CSS</small>
     </div>
   </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    document.getElementById('contact-form').addEventListener('submit', event => {
+      event.preventDefault();
+
+      const form = event.currentTarget;
+      const name = form.elements.name.value.trim();
+      const email = form.elements.email.value.trim();
+      const message = form.elements.message.value.trim();
+      const subject = encodeURIComponent('📩 message');
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+
+      window.location.href = `mailto:medathaanvi@gmail.com?subject=${subject}&body=${body}`;
+    });
+  </script>
 </body>
 </html>

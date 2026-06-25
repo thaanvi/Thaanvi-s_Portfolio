@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Thaanvi Sudarsan Meda — Software Engineer & AI/ML Developer</title>
+  <title>Thaanvi Sudarsan Meda — Software Engineer &amp; AI/ML Developer</title>
   <meta name="description" content="Portfolio of Thaanvi Sudarsan Meda. Software engineer, graduate student, and AI/ML developer. Experience in iOS, Vision Pro, computer vision, and full-stack development.">
   <meta name="keywords" content="Thaanvi, software engineer, iOS developer, AI/ML, computer vision, Vision Pro">
-  <meta property="og:title" content="Thaanvi Sudarsan Meda — Software Engineer & AI/ML Developer">
+  <meta property="og:title" content="Thaanvi Sudarsan Meda — Software Engineer &amp; AI/ML Developer">
   <meta property="og:description" content="Portfolio showcasing my work in iOS development, AI/ML, and innovative technology solutions.">
   <meta name="theme-color" content="#7a4b2a">
   <link rel="stylesheet" href="css/styles.css">
@@ -67,27 +67,81 @@
       </section>
     </div>
 
-    <section class="container home-section" aria-labelledby="home-experience-title">
+    <section class="container home-section home-experience-section" aria-labelledby="home-experience-title">
       <div class="section-heading-row">
         <h2 id="home-experience-title">Experience</h2>
         <a class="link" href="experience.html">View experience</a>
       </div>
-      <div class="home-grid">
-        <article class="home-summary-card">
-          <h3>Target Corporation</h3>
-          <p><strong>iOS App Developer</strong> | Aug 2022 - Jul 2024</p>
-          <p>Owned and maintained high-traffic registry experiences, delivered SwiftUI migration work, and shipped customer-facing iOS features across release cycles.</p>
-        </article>
-        <article class="home-summary-card">
-          <h3>UNC Charlotte</h3>
-          <p><strong>Research Engineer, MetaBo Food Vision Pro</strong> | Nov 2025 - May 2026</p>
-          <p>Building an Apple Vision Pro spatial computing application for personalized nutrition recommendations using food data, health profiles, PostgreSQL, and REST APIs.</p>
-        </article>
-        <article class="home-summary-card">
-          <h3>PwC</h3>
-          <p><strong>Risk Analyst Intern</strong> | Jan 2022 - Jul 2022</p>
-          <p>Applied machine learning and automated analytical workflows to identify fraud patterns and support risk mitigation initiatives.</p>
-        </article>
+      <div class="experience-container">
+        <div class="experience-cards" role="tablist" aria-label="Home experience selector">
+          <button class="experience-card active" data-key="home-target" type="button" role="tab" aria-selected="true">
+            <img src="assets/target.png" alt="Target Corporation logo">
+          </button>
+          <button class="experience-card" data-key="home-uncc" type="button" role="tab" aria-selected="false">
+            <img src="assets/UNCC.jpg" alt="UNC Charlotte logo">
+          </button>
+          <button class="experience-card" data-key="home-pwc" type="button" role="tab" aria-selected="false">
+            <img src="assets/PWC.png" alt="PwC logo">
+          </button>
+        </div>
+
+        <div class="experience-details">
+          <div class="experience-panel active" data-key="home-target">
+            <section>
+              <h2>Target Corporation</h2>
+              <p><strong>iOS App Developer</strong> — Aug 2022 – Jul 2024</p>
+              <ul>
+                <li>As one of two engineers on the Registry sub-team, solely owned development and maintenance of 18 - 20 registry pages on Target’s iOS application serving 1M+ concurrent users.</li>
+                <li>Independently delivered the Registry Checklist feature end-to-end, driving 32K+ daily visits and boosting customer engagement. Led UIKit → SwiftUI migration across 9–12 screens with full unit test coverage, reducing crash rates and improving page load time by 18% in a high-traffic production environment.</li>
+                <li>Collaborated with product managers, designers and cross-functional engineering teams throughout Agile sprint cycles to deliver customer-facing features and contributed to code testing, reviews, beta releases and production support to ensure application quality and reliability.</li>
+                <li>Delivered features across every release cycle while implementing asynchronous RESTful APIs, JSON parsing and MVVM architecture patterns.</li>
+              </ul>
+            </section>
+            <div class="experience-collage">
+              <img src="assets/target_picture1.JPG" alt="Target experience image 1" class="collage-img img1">
+              <img src="assets/target_picture3.JPG" alt="Target experience image 2" class="collage-img img2">
+              <img src="assets/target_picture2.JPG" alt="Target experience image 3" class="collage-img img3">
+              <img src="assets/target_picture4.JPG" alt="Target experience image 4" class="collage-img img4">
+            </div>
+          </div>
+          <div class="experience-panel" data-key="home-uncc">
+            <section>
+              <h2>UNC Charlotte</h2>
+              <p><strong>Research Engineer, MetaBo Food Vision Pro</strong> — Nov 2025 – May 2026</p>
+              <ul>
+                <li>Developing a spatial computing application for Apple Vision Pro that delivers personalized nutritional recommendations based on user health profiles and disease-specific dietary needs.</li>
+                <li>Leveraging a dataset of 35K+ food products stored in PostgreSQL and integrating RESTful APIs to support personalized nutritional recommendations and real-time food analysis.</li>
+              </ul>
+              <p><a class="btn" href="https://drive.google.com/drive/folders/1_fEfsxDglyId_bzeo3bZcqAuI9nUN5AV" target="_blank" rel="noreferrer">View Demo Video</a></p>
+            </section>
+            <section>
+              <h2>UNC Charlotte</h2>
+              <p><strong>Instructional Assistant</strong> — Aug 2025 – May 2026</p>
+              <ul>
+                <li>Supported 195 students across three course sections through recitations, office hours, grading and Tableau-based data visualization guidance.</li>
+                <li>Assisted with exam preparation and provided individualized academic support to improve student understanding and assignment quality.</li>
+              </ul>
+            </section>
+            <div class="experience-collage uncc-collage">
+              <img src="assets/UNCC_p1.jpeg" alt="UNCC collage image 1" class="collage-img">
+              <img src="assets/UNCC_p2.jpeg" alt="UNCC collage image 2" class="collage-img">
+              <img src="assets/UNCC_p4.png" alt="UNCC collage image 3" class="collage-img">
+              <img src="assets/UNCC_p3.jpg" alt="UNCC collage image 4" class="collage-img">
+              <img src="assets/UNCC_p5.jpg" alt="UNCC collage image 5" class="collage-img">
+              <img src="assets/UNCC_p6.jpg" alt="UNCC collage image 6" class="collage-img">
+            </div>
+          </div>
+          <div class="experience-panel" data-key="home-pwc">
+            <section>
+              <h2>PwC</h2>
+              <p><strong>Risk Analyst Intern</strong> — Jan 2022 – Jul 2022</p>
+              <ul>
+                <li>Applied machine learning techniques to analyze 100K+ client records, identifying fraud patterns and supporting risk mitigation initiatives.</li>
+                <li>Automated analytical workflows and data validation processes to improve reporting efficiency and decision-making.</li>
+              </ul>
+            </section>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -96,20 +150,44 @@
         <h2 id="home-education-title">Education</h2>
         <a class="link" href="education.html">View education</a>
       </div>
-      <div class="home-grid">
-        <article class="home-summary-card">
-          <h3>University of North Carolina at Charlotte</h3>
-          <p><strong>Master of Science in Computer Science</strong> | 2024 - 2026</p>
-          <p>GPA: 3.9/4.0. Coursework includes AI, Visual Analytics, Database Systems, Big Data Analytics, Networks, and Information Security.</p>
+      <div class="education-gallery" aria-label="Home education institutions gallery">
+        <article class="education-card" tabindex="0">
+          <div class="education-card-inner">
+            <div class="education-card-face education-card-front">
+              <img src="assets/UNCC.jpg" alt="UNC Charlotte campus image">
+            </div>
+            <div class="education-card-face education-card-back">
+              <h2>University of North Carolina at Charlotte</h2>
+              <p class="education-degree">Master of Science in Computer Science | 2024 - 2026</p>
+              <p><strong>GPA:</strong> 3.9/4.0</p>
+              <p><strong>Relevant Coursework:</strong> Algorithm &amp; Data Structures, Artificial Intelligence, Visual Analytics, Computer Communication &amp; Networks, Big Data Analytics for Computing, Database Systems, Network Based Application Development, Social Technology Design, Principles of Information Security &amp; Privacy</p>
+              <p><strong>Activities:</strong> Vice President, Asian Women Advancing AI (AWAAI) - UNC Charlotte Chapter <a class="document-icon-link" href="assets/AWAAI.pdf" target="_blank" rel="noopener" aria-label="View AWAAI document"><img src="assets/doc_image.webp" alt=""></a></p>
+            </div>
+          </div>
         </article>
-        <article class="home-summary-card">
-          <h3>Amrita Vishwa Vidyapeetham</h3>
-          <p><strong>Bachelor of Engineering in Computer Science</strong> | 2018 - 2022</p>
+        <article class="education-card" tabindex="0">
+          <div class="education-card-inner">
+            <div class="education-card-face education-card-front">
+              <img src="assets/Amrita_image.png" alt="Amrita Vishwa Vidyapeetham campus image">
+            </div>
+            <div class="education-card-face education-card-back">
+              <h2>Amrita Vishwa Vidyapeetham <a class="document-icon-link certificate-icon-link" href="assets/Btech.pdf" target="_blank" rel="noopener" aria-label="View B.Tech certificate"><img src="assets/certificate_icon.png" alt=""></a></h2>
+              <p class="education-degree">Bachelor of Engineering in Computer Science | 2018 - 2022</p>
+              <p><strong>Relevant Coursework:</strong> Data Structures and Algorithms, Object Oriented Programming, Design and Analysis of Algorithms, Introduction to Embedded Systems, Operating Systems, Probability and Random Processes, Computer Organization and Architecture, Database Management Systems, Android Application Development, Compiler Design, Computer Networks, Software Engineering, Pattern Recognition, Principles of Machine Learning, Machine Learning and Data Mining, Structure and Interpretation of Computer Programs, Natural Language Processing, Net Centric Programming, Software Project Management.</p>
+            </div>
+          </div>
         </article>
-        <article class="home-summary-card">
-          <h3>Bharatiya Vidya Bhavan</h3>
-          <p><strong>High School</strong> | 2016 - 2018</p>
-          <p>CBSE Board Score: 10/10.</p>
+        <article class="education-card" tabindex="0">
+          <div class="education-card-inner">
+            <div class="education-card-face education-card-front">
+              <img src="assets/Bhavan's.jpeg" alt="Bhavan's institution image">
+            </div>
+            <div class="education-card-face education-card-back">
+              <h2>Bharatiya Vidya Bhavan</h2>
+              <p class="education-degree">High School (up to Grade 10) </p>
+              <p><strong>CBSE Board Score:</strong> 10/10 <a class="document-icon-link certificate-icon-link" href="assets/merit_award.jpg" target="_blank" rel="noopener" aria-label="View CBSE board certificate"><img src="assets/certificate_icon.png" alt=""></a></p>
+            </div>
+          </div>
         </article>
       </div>
     </section>
@@ -122,23 +200,48 @@
       <div class="cards home-projects">
         <a class="card" href="visual-face-reconstruction.html">
           <h3>Visual Speech-Aware 3D Facial Reconstruction</h3>
-          <p>Speech-aware 3D reconstruction using SPECTRE/DECA, MobileNetV2, temporal convolution, AWS EC2, and Streamlit.</p>
+          <p>Built speech-aware 3D facial reconstruction using SPECTRE/DECA backbone with MobileNetV2 and temporal convolution, trained on LRS3 dataset (118K+ synchronized audio-video clips). Deployed on AWS EC2 with Streamlit frontend.</p>
+          <p><strong>Tech:</strong> Python, PyTorch, OpenCV, AWS, Streamlit</p>
+          <div class="card-screenshots">
+            <img src="assets/Spectre1.png" alt="Speech-aware 3D facial reconstruction dashboard screenshot 1">
+            <img src="assets/Spectre2.png" alt="Speech-aware 3D facial reconstruction dashboard screenshot 2">
+          </div>
         </a>
         <a class="card" href="smart-voting-system.html">
-          <h3>Smart Voting System</h3>
-          <p>Biometric fingerprint recognition system using image processing, Gabor filtering, and GSM-based communication.</p>
+          <h3>Smart Voting System (Published Research)</h3>
+          <p>Developed a biometric fingerprint recognition system using Gabor filtering and Hamming distance-based minutiae matching. Published at ICICCT 2022, Springer. Demonstrates advanced image processing and security applications.</p>
+          <p><strong>Tech:</strong> Python, OpenCV, Pandas, GSM Module</p>
+          <div class="card-screenshots">
+            <img src="assets/GSM1.png" alt="Smart voting system dashboard screenshot 1">
+            <img src="assets/GSM2.png" alt="Smart voting system dashboard screenshot 2">
+          </div>
         </a>
         <a class="card" href="multi-station-environmental-behaviour-analysis.html">
           <h3>Multistation Environmental Behaviour Analysis</h3>
-          <p>Interactive Tableau dashboard for humidity, battery voltage, and wind-speed comparison across stations.</p>
+          <p>This project presents an interactive Tableau dashboard built to analyze and visualize key insights from the dataset.</p>
+          <p><strong>Tech:</strong> Tableau, Tableau Prep Builder, Excel / CSV, Data Visualization, Dashboard Design</p>
+          <div class="card-screenshots">
+            <img src="assets/VA_image.png" alt="Environmental behavior dashboard with humidity trends, battery voltage, and wind speed analysis">
+            <img src="assets/VA_image2.png" alt="Correlation analysis dashboard showing temperature vs humidity relationships">
+          </div>
         </a>
         <a class="card" href="restaurant-review-sentiment-analysis.html">
-          <h3>Restaurant Review Sentiment Analysis</h3>
-          <p>Review classification and dashboard insights for positive, neutral, and negative restaurant feedback.</p>
+          <h3>Restaurant Review Sentiment Analysis System</h3>
+          <p>The user manual explains how to install, launch, and use a restaurant review sentiment system. It analyzes reviews, classifies them as positive, neutral, or negative, and presents the results on a user-friendly dashboard for managers, owners, and diners.</p>
+          <p><strong>Tech:</strong> Python, NLP, Sentiment Analysis, Dashboard Design</p>
+          <div class="card-screenshots">
+            <img src="assets/sentimental_analysis.png" alt="Restaurant review sentiment dashboard - overview">
+            <img src="assets/sentimental_analysis2.png" alt="Restaurant review sentiment dashboard - detailed view">
+          </div>
         </a>
         <a class="card" href="graph-algorithms.html">
-          <h3>Graph Algorithms and Related Data Structures</h3>
-          <p>Dijkstra, Kruskal, DFS, topological sorting, and cycle detection with graph visualizations.</p>
+          <h3>Graph algorithms and related data structures</h3>
+          <p>In this project three graph algorithms are implemented which include: Single-Source Shortest Path, Minimum Spanning Tree using Kruskal’s algorithm and Depth-First Search with topological sorting and cycle detection.</p>
+          <p><strong>Tech:</strong> Python, Jupyter Notebook, Graph Algorithms, Dijkstra’s Algorithm, Kruskal’s Algorithm, DFS, Priority Queue, Union-Find</p>
+          <div class="card-screenshots">
+            <img src="assets/DSA1.png" alt="Graph algorithm visualization screenshot 1">
+            <img src="assets/DSA2.png" alt="Graph algorithm visualization screenshot 2">
+          </div>
         </a>
       </div>
     </section>
@@ -148,20 +251,52 @@
         <h2 id="home-skills-title">Skillset</h2>
         <a class="link" href="skills.html">View skillset</a>
       </div>
-      <ul class="home-skill-list">
-        <li>iOS Development</li>
-        <li>SwiftUI</li>
-        <li>UIKit</li>
-        <li>Python</li>
-        <li>AI/ML</li>
-        <li>Computer Vision</li>
-        <li>React</li>
-        <li>Node.js</li>
-        <li>PostgreSQL</li>
-        <li>Tableau</li>
-        <li>Docker</li>
-        <li>Git</li>
-      </ul>
+      <section class="skill-section">
+        <h3>Languages</h3>
+        <ul class="skill-logo-grid" aria-label="Home programming languages">
+          <li tabindex="0"><img src="https://cdn.simpleicons.org/swift/F05138" alt="Swift"><span>Swift</span></li>
+          <li tabindex="0"><img src="https://cdn.simpleicons.org/python/3776AB" alt="Python"><span>Python</span></li>
+          <li tabindex="0"><img src="https://cdn.simpleicons.org/openjdk/000000" alt="Java"><span>Java</span></li>
+          <li tabindex="0"><img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript"><span>JavaScript</span></li>
+          <li tabindex="0"><img src="https://cdn.simpleicons.org/kotlin/7F52FF" alt="Kotlin"><span>Kotlin</span></li>
+          <li tabindex="0"><img src="https://cdn.simpleicons.org/c/A8B9CC" alt="C"><span>C</span></li>
+          <li tabindex="0"><img src="https://cdn.simpleicons.org/cplusplus/00599C" alt="C++"><span>C++</span></li>
+          <li tabindex="0"><img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5"><span>HTML5</span></li>
+          <li tabindex="0"><img src="https://cdn.simpleicons.org/css/1572B6" alt="CSS"><span>CSS</span></li>
+        </ul>
+      </section>
+      <section class="skill-section">
+        <h3>Frameworks &amp; Tools</h3>
+        <ul class="skill-logo-grid" aria-label="Home frameworks and tools">
+          <li tabindex="0"><img src="https://cdn.simpleicons.org/xcode/147EFB" alt="Xcode"><span>Xcode</span></li>
+          <li tabindex="0"><img src="https://cdn.simpleicons.org/androidstudio/3DDC84" alt="Android Studio"><span>Android Studio</span></li>
+          <li tabindex="0"><img src="assets/swiftui-logo.svg" alt="SwiftUI"><span>SwiftUI</span></li>
+          <li tabindex="0"><img src="assets/uikit-logo.svg" alt="UIKit"><span>UIKit</span></li>
+          <li tabindex="0"><img src="https://cdn.simpleicons.org/apple/000000" alt="visionOS"><span>visionOS</span></li>
+          <li tabindex="0"><img src="assets/apple-vr-logo.svg" alt="Apple VR"><span>Apple VR</span></li>
+          <li tabindex="0"><img src="assets/reality-composer-pro-logo.svg" alt="Reality Composer Pro"><span>Reality Composer Pro</span></li>
+          <li tabindex="0"><img src="https://cdn.simpleicons.org/pytorch/EE4C2C" alt="PyTorch"><span>PyTorch</span></li>
+          <li tabindex="0"><img src="https://cdn.simpleicons.org/opencv/5C3EE8" alt="OpenCV"><span>OpenCV</span></li>
+          <li tabindex="0"><img src="https://cdn.simpleicons.org/scikitlearn/F7931E" alt="Scikit-learn"><span>Scikit-learn</span></li>
+          <li tabindex="0"><img src="https://cdn.simpleicons.org/react/61DAFB" alt="React"><span>React</span></li>
+          <li tabindex="0"><img src="https://cdn.simpleicons.org/nodedotjs/5FA04E" alt="Node.js"><span>Node.js</span></li>
+          <li tabindex="0"><img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker"><span>Docker</span></li>
+          <li tabindex="0"><img src="https://cdn.simpleicons.org/git/F05032" alt="Git"><span>Git</span></li>
+          <li tabindex="0"><img src="https://cdn.simpleicons.org/githubactions/2088FF" alt="CI/CD"><span>CI/CD</span></li>
+          <li tabindex="0"><img src="assets/codex-logo.svg" alt="Codex"><span>Codex</span></li>
+          <li tabindex="0"><img src="assets/claude-logo.svg" alt="Claude"><span>Claude</span></li>
+        </ul>
+      </section>
+      <section class="skill-section">
+        <h3>Databases &amp; Data</h3>
+        <ul class="skill-logo-grid" aria-label="Home databases and data tools">
+          <li tabindex="0"><img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="PostgreSQL"><span>PostgreSQL</span></li>
+          <li tabindex="0"><img src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL"><span>MySQL</span></li>
+          <li tabindex="0"><img src="https://cdn.simpleicons.org/sqlite/003B57" alt="SQLite"><span>SQLite</span></li>
+          <li tabindex="0"><img src="assets/tableau-logo.svg" alt="Tableau"><span>Tableau</span></li>
+          <li tabindex="0"><img src="https://cdn.simpleicons.org/snowflake/29B5E8" alt="Snowflake"><span>Snowflake</span></li>
+        </ul>
+      </section>
     </section>
 
     <section class="container home-section" aria-labelledby="home-leadership-title">
@@ -169,19 +304,63 @@
         <h2 id="home-leadership-title">Leadership &amp; Extracurriculars</h2>
         <a class="link" href="leadership.html">View leadership</a>
       </div>
-      <div class="home-grid">
-        <article class="home-summary-card">
-          <h3>Academic Leadership</h3>
-          <p>House Captain, Environmental Secretary, and Class Representative roles across Bharatiya Vidya Bhavan and Amrita Vishwa Vidyapeetham.</p>
-        </article>
-        <article class="home-summary-card">
-          <h3>Event &amp; Community Leadership</h3>
-          <p>Co-Head of Corporate Relations for Anokha and member of Live in Labs, supporting sustainable community-focused projects.</p>
-        </article>
-        <article class="home-summary-card">
-          <h3>Sports Leadership</h3>
-          <p>Captained the school girls basketball team for two consecutive years and represented the school in inter-school tournaments.</p>
-        </article>
+      <div class="leadership-grid">
+        <section class="leadership-group">
+          <h2>Academic Leadership</h2>
+          <article class="leadership-item">
+            <h3>House Captain</h3>
+            <p class="leadership-meta">Bharatiya Vidya Bhavan | Grade 10</p>
+            <ul>
+              <li>Represented and led the school house in academic and co-curricular activities.</li>
+              <li>House secured Runner-Up in Overall Sports that year.</li>
+            </ul>
+          </article>
+          <article class="leadership-item">
+            <h3>Environmental Secretary</h3>
+            <p class="leadership-meta">Bharatiya Vidya Bhavan | Grade 9</p>
+            <ul>
+              <li>Served on the Student Council as Environmental Secretary.</li>
+              <li>School adopted a rare alligator species at the local zoo during this tenure.</li>
+            </ul>
+          </article>
+          <article class="leadership-item">
+            <h3>Class Representative</h3>
+            <p class="leadership-meta">Amrita Vishwa Vidyapeetham | B.Tech Computer Science Engineering</p>
+            <ul>
+              <li>Elected by peers through a class-wide vote to represent student interests.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="leadership-group">
+          <h2>Event &amp; Community Leadership</h2>
+          <article class="leadership-item">
+            <h3>Co-Head, Corporate Relations</h3>
+            <p class="leadership-meta">Anokha - Annual College Fest | Amrita Vishwa Vidyapeetham</p>
+            <ul>
+              <li>Managed corporate outreach and sponsorship relations for the university's flagship annual fest.</li>
+            </ul>
+          </article>
+          <article class="leadership-item">
+            <h3>Member</h3>
+            <p class="leadership-meta">Live in Labs | Amrita Vishwa Vidyapeetham</p>
+            <ul>
+              <li>Part of a student-driven club and NGO bringing together interdisciplinary teams to build sustainable solutions for underprivileged rural communities across India.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="leadership-group">
+          <h2>Sports Leadership</h2>
+          <article class="leadership-item">
+            <h3>Girls Basketball Team Captain</h3>
+            <p class="leadership-meta">Bharatiya Vidya Bhavan</p>
+            <ul>
+              <li>Captained the school girls basketball team for two consecutive years.</li>
+              <li>Represented the school in multiple inter-school tournaments.</li>
+            </ul>
+          </article>
+        </section>
       </div>
     </section>
 
@@ -195,6 +374,22 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    const homeExpCards = document.querySelectorAll('.home-section .experience-card');
+    const homeExpPanels = document.querySelectorAll('.home-section .experience-panel');
+
+    homeExpCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const key = card.dataset.key;
+        homeExpCards.forEach(btn => {
+          btn.classList.toggle('active', btn === card);
+          btn.setAttribute('aria-selected', String(btn === card));
+        });
+        homeExpPanels.forEach(panel => {
+          panel.classList.toggle('active', panel.dataset.key === key);
+        });
+      });
+    });
   </script>
 
   <!-- Google Analytics -->
